@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.a12550441.eva2_7_intentos_bundles.Principal"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVwNom" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edTxtNom"
+        android:hint="Introduce tu nombre" />
+
+    <TextView
+        android:text="Edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVwEdad" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edTxtEdad"
+        android:hint="Introduce tu edad" />
+
+    <TextView
+        android:text="Sexo:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVwSex" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RadioButton
+            android:text="Mucho"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:id="@+id/rdBtnMuc"
+            android:checked="true" />
+
+        <RadioButton
+            android:text="Poco"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:id="@+id/rdBtnPoco" />
+
+        <Button
+            android:text="Secundaria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickP"
+            android:id="@+id/btnSec" />
+    </RadioGroup>
+
+</LinearLayout>
